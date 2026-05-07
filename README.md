@@ -1,36 +1,125 @@
-# 🍕 Plato's Pizza: A Year in Review
+# Plato's Pizza: Revenues and Operations Analysis
 
-[![SQL](https://img.shields.io/badge/SQL-PostgreSQL-blue)](https://www.postgresql.org/)
-[![Tableau](https://img.shields.io/badge/Tableau-Dashboard-orange)](https://www.tableau.com/)
+[![SQL Server](https://img.shields.io/badge/SQL%20Server-Data%20Analysis-red?logo=microsoft-sql-server&logoColor=white)](https://www.microsoft.com/en-us/sql-server/)
+[![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow?logo=power-bi&logoColor=black)](https://powerbi.microsoft.com/)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
-## 📊 Project Overview
+## Project Overview
 
-A comprehensive data analysis of Plato's Pizza, a Greek-inspired pizzeria in New Jersey, examining one full year of operations (21,350 orders, $817,860 revenue). The analysis identifies operational inefficiencies that could increase revenue without significant capital investment.
+A comprehensive data analysis of Plato's Pizza, a Greek-inspired pizzeria in New Jersey, examining one full year of operations (21,350 orders, $817,860 revenue). **The analysis identifies operational inefficiencies that could increase revenue without significant capital investment.**
 
-**Key Business Metrics:**
-- **Total Revenue:** $817,860
-- **Total Orders:** 21,350
-- **Average Order Value:** $38.31
-- **Average Pizzas Per Order:** 2.3
+**Insights and recommendations are provided on the following key areas:**
+- Revenue Growth (Total Sales & Trends)
+- Market Demand (Order Frequency & Volume)
+- Transaction Value (Average Spend per Customer)
+- Product Performance (Quantity per Order)
 
-## 🎯 Business Impact
+# Data Structure & Initial Checks
 
-This analysis uncovered **$150,000+ in annual profit opportunities** with minimal investment (<$2,000):
+### Data Schema Overview
+The dataset consists of four interconnected tables containing 21,350 unique orders and over 49,000 line items:
 
-| Opportunity | Annual Impact | Investment | Payback |
-|-------------|---------------|------------|---------|
-| Seating reconfiguration | $40,000+ | $1,000 | 3 weeks |
-| Menu simplification | $10,000+ (cost savings) | $0 | Immediate |
-| Average order value increase | $106,750 | $0 (staff training) | Immediate |
+| Table | Records | Attributes |
+| :--- | :--- | :--- |
+| **Orders** | 21,350 | Transaction ID, Date, Time |
+| **Order Details** | 49,000+ | Line item mapping, Quantity per pizza |
+| **Pizzas** | 32 | Pizza ID, Size, Unit Price |
+| **Pizza Types** | 32 | Name, Category (Classic, Veggie, etc.), Ingredients |
 
-## 📁 Database Structure
+**ERD**
+<img width="520" height="267" alt="Pizza_ERD" src="https://github.com/user-attachments/assets/3f7f5a4d-a6dd-427a-903d-a3dbdb61269f" />
 
-The database contains four tables with 21,350 orders and 49,000+ order detail records:
 
-```sql
--- Table overview
-orders          -- 21,350 rows | Order ID, date, time
-order_details   -- 49,000+ rows | Line items, quantity
-pizzas          -- 32 rows | Pizza ID, size, price
-pizza_types     -- 32 rows | Name, category, ingredients
+# Executive Summary
+
+### Overview of Findings
+
+Explain the overarching findings, trends, and themes in 2-3 sentences here. This section should address the question: "If a stakeholder were to take away 3 main insights from your project, what are the most important things they should know?" You can put yourself in the shoes of a specific stakeholder - for example, a marketing manager or finance director - to think creatively about this section.
+
+[Visualization, including a graph of overall trends or snapshot of a dashboard]
+
+
+
+# Insights Deep Dive
+### Category 1:
+
+* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+  
+* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+  
+* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+  
+* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+
+[Visualization specific to category 1]
+
+
+### Category 2:
+
+* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+  
+* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+  
+* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+  
+* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+
+[Visualization specific to category 2]
+
+
+### Category 3:
+
+* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+  
+* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+  
+* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+  
+* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+
+[Visualization specific to category 3]
+
+
+### Category 4:
+
+* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+  
+* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+  
+* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+  
+* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+
+[Visualization specific to category 4]
+
+
+
+# Recommendations:
+
+Based on the insights and findings above, we would recommend the [stakeholder team] to consider the following: 
+
+* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
+  
+* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
+  
+* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
+  
+* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
+  
+* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
+  
+
+
+# Assumptions and Caveats:
+
+Throughout the analysis, multiple assumptions were made to manage challenges with the data. These assumptions and caveats are noted below:
+
+* Assumption 1 (ex: missing country records were for customers based in the US, and were re-coded to be US citizens)
+  
+* Assumption 1 (ex: data for December 2021 was missing - this was imputed using a combination of historical trends and December 2020 data)
+  
+* Assumption 1 (ex: because 3% of the refund date column contained non-sensical dates, these were excluded from the analysis)
+
+
+
+
