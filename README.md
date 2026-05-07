@@ -26,7 +26,7 @@ The dataset consists of four interconnected tables containing 21,350 unique orde
 | **Pizzas** | 32 | Pizza ID, Size, Unit Price |
 | **Pizza Types** | 32 | Name, Category (Classic, Veggie, etc.), Ingredients |
 
-**ERD**
+### ERD Diagram
 <img width="520" height="267" alt="Pizza_ERD" src="https://github.com/user-attachments/assets/3f7f5a4d-a6dd-427a-903d-a3dbdb61269f" />
 
 
