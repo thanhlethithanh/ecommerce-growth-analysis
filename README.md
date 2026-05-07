@@ -21,10 +21,10 @@ The dataset consists of four interconnected tables containing 21,350 unique orde
 
 | Table | Records | Attributes |
 | :--- | :--- | :--- |
-| **Orders** | 21,350 | Transaction ID, Date, Time |
-| **Order Details** | 49,000+ | Line item mapping, Quantity per pizza |
-| **Pizzas** | 32 | Pizza ID, Size, Unit Price |
-| **Pizza Types** | 32 | Name, Category (Classic, Veggie, etc.), Ingredients |
+| Orders | 21,350 | Transaction ID, Date, Time |
+| Order Details | 49,000+ | Line item mapping, Quantity per pizza |
+| Pizzas | 32 | Pizza ID, Size, Unit Price |
+| Pizza Types | 32 | Name, Category (Classic, Veggie, etc.), Ingredients |
 
 ### ERD Diagram
 <img width="520" height="267" alt="Pizza_ERD" src="https://github.com/user-attachments/assets/3f7f5a4d-a6dd-427a-903d-a3dbdb61269f" />
